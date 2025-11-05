@@ -17,10 +17,10 @@ const CartSidebar = () => {
   };
 
 const handleCheckout = () => {
-    // Navigate first to prevent any interference from cart state changes
+    // Navigate to checkout page - route protection will handle authentication
     navigate("/checkout");
     
-    // Close cart with small delay to ensure navigation completes
+    // Close cart sidebar after navigation is initiated
     setTimeout(() => {
       setIsCartOpen(false);
     }, 100);
