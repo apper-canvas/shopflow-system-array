@@ -19,11 +19,6 @@ const CartSidebar = () => {
 const handleCheckout = () => {
     // Navigate to checkout page - route protection will handle authentication
     navigate("/checkout");
-    
-    // Close cart sidebar after navigation is initiated
-    setTimeout(() => {
-      setIsCartOpen(false);
-    }, 100);
   };
 
   const handleContinueShopping = () => {
