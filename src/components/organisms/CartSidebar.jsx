@@ -16,9 +16,14 @@ const CartSidebar = () => {
     }).format(price);
   };
 
-  const handleCheckout = () => {
-    setIsCartOpen(false);
+const handleCheckout = () => {
+    // Navigate first to prevent any interference from cart state changes
     navigate("/checkout");
+    
+    // Close cart with small delay to ensure navigation completes
+    setTimeout(() => {
+      setIsCartOpen(false);
+    }, 100);
   };
 
   const handleContinueShopping = () => {
