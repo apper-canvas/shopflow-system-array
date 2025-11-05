@@ -194,8 +194,9 @@ Sign Up
             </nav>
           </div>
         )}
-      </div>
+</div>
     </header>
+  );
 };
 
 export default Header;
