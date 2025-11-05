@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useAuth } from "@/layouts/Root";
 import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
+import Login from "@/components/pages/Login";
 import SearchBar from "@/components/molecules/SearchBar";
+import { useAuth } from "@/layouts/Root";
 import { useCart } from "@/hooks/useCart";
 
 const Header = () => {
@@ -123,11 +124,10 @@ const Header = () => {
                   size="sm"
                   onClick={() => navigate('/signup')}
                 >
-                  Sign Up
+Sign Up
                 </Button>
               </div>
             )}
-)}
 
             {/* Mobile Menu Button */}
             <Button
