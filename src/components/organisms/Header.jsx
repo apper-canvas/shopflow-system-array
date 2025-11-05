@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { useAuth } from "@/layouts/Root";
+import ApperIcon from "@/components/ApperIcon";
 import Button from "@/components/atoms/Button";
 import SearchBar from "@/components/molecules/SearchBar";
-import ApperIcon from "@/components/ApperIcon";
 import { useCart } from "@/hooks/useCart";
 
 const Header = () => {
@@ -10,6 +12,8 @@ const Header = () => {
   const location = useLocation();
   const { getCartItemCount, setIsCartOpen } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { user, isAuthenticated } = useSelector(state => state.user);
+  const { logout } = useAuth();
 
   const cartItemCount = getCartItemCount();
 
@@ -66,7 +70,7 @@ const Header = () => {
           </div>
 
           {/* Actions */}
-          <div className="flex items-center space-x-4">
+<div className="flex items-center space-x-4">
             {/* Search Button - Mobile */}
             <div className="lg:hidden">
               <Button variant="ghost" size="sm">
@@ -89,25 +93,55 @@ const Header = () => {
               )}
             </Button>
 
+            {/* Auth Buttons */}
+            {isAuthenticated ? (
+              <div className="flex items-center space-x-2">
+                <span className="hidden sm:inline text-sm text-gray-600">
+                  Welcome, {user?.firstName || user?.name || 'User'}
+                </span>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={logout}
+                >
+                  <ApperIcon name="LogOut" size={20} />
+                  <span className="hidden sm:inline ml-2">Logout</span>
+                </Button>
+              </div>
+            ) : (
+              <div className="flex items-center space-x-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => navigate('/login')}
+                >
+                  <ApperIcon name="LogIn" size={20} />
+                  <span className="hidden sm:inline ml-2">Login</span>
+                </Button>
+                <Button
+                  variant="primary"
+                  size="sm"
+                  onClick={() => navigate('/signup')}
+                >
+                  Sign Up
+                </Button>
+              </div>
+            )}
+)}
+
             {/* Mobile Menu Button */}
-            <div className="lg:hidden">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                <ApperIcon name={isMobileMenuOpen ? "X" : "Menu"} size={20} />
-              </Button>
-            </div>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden"
+            >
+              <ApperIcon name={isMobileMenuOpen ? "X" : "Menu"} size={20} />
+            </Button>
           </div>
         </div>
 
-        {/* Mobile Search */}
-        <div className="lg:hidden pb-4">
-          <SearchBar onSearch={handleSearch} />
-        </div>
-
-        {/* Mobile Navigation */}
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-100 py-4">
             <nav className="flex flex-col space-y-3">
@@ -125,12 +159,43 @@ const Header = () => {
                   {item.label}
                 </Link>
               ))}
+              
+              {/* Auth Menu Items */}
+              {!isAuthenticated && (
+                <>
+                  <Link
+                    to="/login"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="font-medium py-2 px-3 rounded-lg transition-colors text-gray-700 hover:bg-gray-50"
+                  >
+                    Login
+                  </Link>
+                  <Link
+                    to="/signup"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="font-medium py-2 px-3 rounded-lg transition-colors bg-primary text-white hover:bg-primary/90"
+                  >
+                    Sign Up
+                  </Link>
+                </>
+              )}
+              
+              {isAuthenticated && (
+                <button
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    logout();
+                  }}
+                  className="font-medium py-2 px-3 rounded-lg transition-colors text-gray-700 hover:bg-gray-50 text-left"
+                >
+                  Logout
+                </button>
+              )}
             </nav>
           </div>
         )}
       </div>
     </header>
-  );
 };
 
 export default Header;
