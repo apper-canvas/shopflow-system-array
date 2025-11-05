@@ -1,0 +1,206 @@
+[
+  {
+    "Id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "description": "Premium noise-cancelling wireless headphones with 30-hour battery life. Features advanced audio drivers and comfortable over-ear design perfect for music, calls, and gaming.",
+    "price": 159.99,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.8,
+    "reviewCount": 324,
+    "stock": 45,
+    "sizes": ["One Size"],
+    "colors": ["Black", "White", "Blue"]
+  },
+  {
+    "Id": 2,
+    "name": "Smart Fitness Watch",
+    "description": "Advanced fitness tracking smartwatch with heart rate monitoring, GPS, and waterproof design. Track workouts, monitor health metrics, and stay connected.",
+    "price": 249.99,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1551816230-ef5deaed4a26?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.6,
+    "reviewCount": 198,
+    "stock": 32,
+    "sizes": ["38mm", "42mm"],
+    "colors": ["Silver", "Space Gray", "Gold"]
+  },
+  {
+    "Id": 3,
+    "name": "Premium Cotton T-Shirt",
+    "description": "Soft, breathable 100% organic cotton t-shirt with modern fit. Sustainably sourced materials and ethically manufactured. Perfect for everyday wear.",
+    "price": 29.99,
+    "category": "Fashion",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1583743814966-8936f37f4036?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.7,
+    "reviewCount": 156,
+    "stock": 78,
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "colors": ["White", "Black", "Gray", "Navy", "Red"]
+  },
+  {
+    "Id": 4,
+    "name": "Designer Denim Jeans",
+    "description": "Premium stretch denim jeans with modern slim fit. Features reinforced stitching, comfortable waistband, and versatile styling for casual or dressy occasions.",
+    "price": 89.99,
+    "category": "Fashion",
+    "images": [
+      "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1475178626620-a4d074967452?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.5,
+    "reviewCount": 243,
+    "stock": 54,
+    "sizes": ["28", "30", "32", "34", "36", "38"],
+    "colors": ["Dark Blue", "Light Blue", "Black", "Gray"]
+  },
+  {
+    "Id": 5,
+    "name": "Modern Coffee Table",
+    "description": "Sleek minimalist coffee table made from sustainable bamboo with clean lines and spacious surface. Perfect centerpiece for modern living rooms.",
+    "price": 349.99,
+    "category": "Home",
+    "images": [
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.9,
+    "reviewCount": 89,
+    "stock": 12,
+    "sizes": ["Standard"],
+    "colors": ["Natural", "Walnut", "White Oak"]
+  },
+  {
+    "Id": 6,
+    "name": "Luxury Throw Pillow Set",
+    "description": "Set of 2 premium velvet throw pillows with down alternative filling. Adds comfort and style to any sofa or bed with rich textures and colors.",
+    "price": 79.99,
+    "category": "Home",
+    "images": [
+      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.4,
+    "reviewCount": 167,
+    "stock": 36,
+    "sizes": ["18x18", "20x20"],
+    "colors": ["Emerald", "Navy", "Blush", "Charcoal", "Gold"]
+  },
+  {
+    "Id": 7,
+    "name": "Professional Running Shoes",
+    "description": "Advanced running shoes with responsive cushioning, breathable mesh upper, and durable rubber outsole. Engineered for performance and comfort.",
+    "price": 129.99,
+    "category": "Sports",
+    "images": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.7,
+    "reviewCount": 412,
+    "stock": 68,
+    "sizes": ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12"],
+    "colors": ["Black/White", "Navy/Gray", "Red/Black", "White/Blue"]
+  },
+  {
+    "Id": 8,
+    "name": "Yoga Mat Premium",
+    "description": "High-quality non-slip yoga mat made from eco-friendly TPE material. Provides excellent grip and cushioning for all types of yoga and fitness routines.",
+    "price": 49.99,
+    "category": "Sports",
+    "images": [
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1506629905607-d77cbe2a2f87?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.6,
+    "reviewCount": 298,
+    "stock": 41,
+    "sizes": ["Standard", "Extra Long"],
+    "colors": ["Purple", "Blue", "Pink", "Green", "Black"]
+  },
+  {
+    "Id": 9,
+    "name": "4K Webcam Pro",
+    "description": "Ultra-high definition webcam with auto-focus, noise reduction, and wide-angle lens. Perfect for video calls, streaming, and content creation.",
+    "price": 199.99,
+    "category": "Electronics",
+    "images": [
+      "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1596126374934-6d0ee80b9d8d?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.8,
+    "reviewCount": 156,
+    "stock": 23,
+    "sizes": ["Standard"],
+    "colors": ["Black", "White"]
+  },
+  {
+    "Id": 10,
+    "name": "Elegant Evening Dress",
+    "description": "Sophisticated midi dress in flowing fabric with flattering silhouette. Perfect for special occasions, dinners, and formal events.",
+    "price": 159.99,
+    "category": "Fashion",
+    "images": [
+      "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1566479179817-c604f7928895?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.9,
+    "reviewCount": 187,
+    "stock": 29,
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Black", "Navy", "Burgundy", "Emerald"]
+  },
+  {
+    "Id": 11,
+    "name": "Scandinavian Floor Lamp",
+    "description": "Modern minimalist floor lamp with warm LED lighting and adjustable height. Features clean lines and premium materials for contemporary spaces.",
+    "price": 189.99,
+    "category": "Home",
+    "images": [
+      "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1549497538-303791108f95?w=500&h=500&fit=crop&center"
+    ],
+    "rating": 4.7,
+    "reviewCount": 134,
+    "stock": 18,
+    "sizes": ["Standard"],
+    "colors": ["White", "Black", "Natural Wood"]
+  },
+  {
+    "Id": 12,
+    "name": "Resistance Band Set",
+    "description": "Complete set of 5 resistance bands with different tension levels, door anchor, and exercise guide. Perfect for home workouts and strength training.",
+    "price": 39.99,
+    "category": "Sports",
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=500&h=500&fit=crop&crop=center"
+    ],
+    "rating": 4.5,
+    "reviewCount": 276,
+    "stock": 52,
+    "sizes": ["Standard"],
+    "colors": ["Multi-Color"]
+  }
+]

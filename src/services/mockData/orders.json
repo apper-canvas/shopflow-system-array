@@ -1,0 +1,31 @@
+[
+  {
+    "Id": 1,
+    "items": [
+      {
+        "productId": 1,
+        "name": "Wireless Bluetooth Headphones",
+        "price": 159.99,
+        "quantity": 1,
+        "selectedSize": "One Size",
+        "selectedColor": "Black"
+      },
+      {
+        "productId": 3,
+        "name": "Premium Cotton T-Shirt",
+        "price": 29.99,
+        "quantity": 2,
+        "selectedSize": "M",
+        "selectedColor": "White"
+      }
+    ],
+    "total": 219.97,
+    "customerInfo": {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "address": "123 Main St, City, State 12345"
+    },
+    "orderDate": "2024-01-15T10:30:00Z",
+    "status": "confirmed"
+  }
+]

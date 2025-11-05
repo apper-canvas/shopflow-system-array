@@ -1,0 +1,94 @@
+@import "react-toastify/dist/ReactToastify.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Toast Customization */
+.Toastify__toast-container {
+  top: 5rem !important;
+  right: 1rem !important;
+  z-index: 9999 !important;
+}
+
+.Toastify__toast {
+  font-family: 'Inter', sans-serif !important;
+  border-radius: 0.75rem !important;
+  font-size: 0.875rem !important;
+  padding: 1rem !important;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #51CF66 0%, #48b85c 100%) !important;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #FF6B6B 0%, #e55555 100%) !important;
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #4ECDC4 0%, #44b8b0 100%) !important;
+}
+
+.Toastify__progress-bar {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF6B6B;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e55555;
+}
+
+/* Custom Animations */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Image optimization */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
